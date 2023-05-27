@@ -55,6 +55,8 @@ body {
     filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
 }
 
+
+/*All the events for buttons*/
 .mainButton:hover {
     background-color: #242424;
 }
