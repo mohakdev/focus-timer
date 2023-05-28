@@ -87,6 +87,11 @@ h3 {
     background: #161616;
 }
 
+a {
+    color: #3265CA;
+    text-decoration: underline;
+}
+
 label {
     font-family: Lato;
     font-size: 26px;

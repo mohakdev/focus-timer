@@ -22,6 +22,7 @@ function timerButtonClick() {
     if (paused) //Start Timer
     {
         paused = false;
+        timerBtn.innerText = "Stop";
     }
     else //Stop Timer
     {
@@ -31,10 +32,12 @@ function timerButtonClick() {
 
 function startTimer() {
     // Update the count down every 1 second
-    timerBtn.innerText = "Stop";
     var x = setInterval(function () {
         if (paused == false) {
-            if (getMinuteTime() == "00:00") { return; }
+            if (minutes == 0 && seconds < 1) {
+                stopTimer();
+                return;
+            }
             if (seconds == 00) {
                 setMinuteTime(minutes - 1, 59);
             }
