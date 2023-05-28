@@ -20,10 +20,27 @@
     </div>
 
     <img src="Art/settingsIcon.png" id="settingsButton" alt="Settings Button" />
-    <!--<div class="settingsBox">
-
-    </div>-->
-    <script defer src="Javascript/script.js"></script>
+    <div id="settingsBox">
+        <h3>Settings</h3>
+        <label for="theme">List of Themes:</label>
+        <select id="theme" class="dropdown">
+            <option value="Wallpaper1">Monday Morning</option>
+            <option value="Wallpaper2">Night Neighborhood</option>
+            <option value="Wallpaper3">Gangsta</option>
+            <option value="Wallpaper4">Anime House</option>
+            <option value="Wallpaper5">Sunset</option>
+            <option value="Wallpaper6">Busy Street</option>
+        </select>
+        <br>
+        <label for="volumeSlider">Volume: </label>
+        <input type="range" min="1" max="100" value="50" class="slider" id="volumeSlider">
+        <h4>Made By Mohak Jain</h4>
+        <h5>open sourced at -> <a>https://github.com/mohakdev/focus-timer</a> </h5>
+        <p>This website is not related to the Pomodoro Technique™
+            trademark holder Cirillo Company and respects its trademarks.</p>
+    </div>
+    <script defer src="Javascript/timer.js"></script>
+    <script defer src="Javascript/settings.js"></script>
 </body>
 
 </html>

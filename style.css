@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 html,
 body {
@@ -31,6 +32,14 @@ body {
     margin: 0%;
 }
 
+h3 {
+    font-family: Koulen;
+    font-size: 60px;
+    color: white;
+    margin: 0%;
+    text-align: center;
+}
+
 .mainButton {
     background-color: #2D2D2D;
     font-family: Koulen;
@@ -41,6 +50,61 @@ body {
     border-style: none;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+#settingsBox {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+
+    background-color: #2D2D2D;
+    max-width: fit-content;
+    max-height: fit-content;
+    border-radius: 20px;
+    border-style: none;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-family: Lato;
+    color: white;
+    text-align: center;
+}
+
+.dropdown {
+    background-color: #161616;
+    font-family: Lato;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+}
+
+.slider {
+    background: #161616;
+}
+
+label {
+    font-family: Lato;
+    font-size: 26px;
+}
+
+h4 {
+    font-family: Koulen;
+    font-size: 38px;
+    margin: 0%;
+}
+
+h5 {
+    font-size: 25px;
+    margin: 0%;
+}
+
+p {
+    font-size: 12px;
 }
 
 #settingsButton {
