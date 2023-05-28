@@ -1,6 +1,6 @@
 //Important Variables
 var targetTime;
-var started = false;
+var paused = true;
 
 const timerLabel = document.getElementById("timerText");
 const timerBtn = document.getElementById("timerButton");
@@ -14,24 +14,34 @@ breakBtn.onclick = setBreakTime;
 timerBtn.onclick = timerButtonClick;
 
 function timerButtonClick() {
-    if (started) //Stop Timer
+
+    if (paused) //Start Timer
     {
-        stopTimer();
-    }
-    else //Start Timer
-    {
+        console.log(paused);
         startTimer();
     }
-    started = !started;
+    else //Stop Timer
+    {
+        console.log(paused);
+        stopTimer();
+    }
+    paused = !paused;
+
 }
 
 function startTimer() {
     // Update the count down every 1 second
     timerBtn.innerText = "Stop";
     var x = setInterval(function () {
-        var currentTime = Date.now();
-        timerLabel.innerHTML = calculateTimeDiff(currentTime, targetTime);
-    }, 1000);
+        if (paused == false) {
+            var currentTime = Date.now();
+            var timeDiff = calculateTimeDiff(currentTime, targetTime);
+            if (timeDiff == "00:00") {
+                return;
+            }
+            timerLabel.innerHTML = timeDiff;
+        }
+    }, 1000); // Thousand here means every single second
 }
 
 function stopTimer() {
