@@ -1,4 +1,7 @@
-var audioFiles = [musicPath('MusicOne'), musicPath('MusicTwo'), musicPath('MusicThree'), musicPath('MusicFour')];
+var audioFiles = [musicURL('ZdAWWeUB4vg6jiRrbeAkurjZsVVQOULU'),
+musicURL('gDbFwaoX3CP6muZB5LMV0yOGIRFS6h93'),
+musicURL('tle9hsTc8fBS1Sip2yfMWJHaxni7Nsi9')];
+
 autoplay(0, audioFiles);
 
 function autoplay(i, list) {
@@ -16,8 +19,8 @@ function autoplay(i, list) {
     sound.play();
 }
 
-function musicPath(filename) {
-    return 'Art/Sounds/' + filename + '.mp3';
+function musicURL(id) {
+    return 'https://audio.jukehost.co.uk/' + id + ".mp3";
 }
 
 //Adjust Volume
@@ -25,13 +28,12 @@ const volumeSlider = document.getElementById("volumeSlider");
 volumeSlider.onchange = changeVolume;
 function changeVolume() {
     Howler.volume(volumeSlider.value / 10);
-    console.log("Changing volume to " + Howler.volume);
 }
 
 function ringAlarm() {
     Howler.stop();
     var sound = new Howl({
-        src: [musicPath('Alarm')],
+        src: [musicURL('S1Y8dmmYd38F5WQHwPUbYHBbdDGOtK7x')],
         onend: function () {
             console.log("alarm stopped");
         }
