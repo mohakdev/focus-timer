@@ -36,6 +36,7 @@ function startTimer() {
         if (paused == false) {
             if (minutes == 0 && seconds < 1) {
                 stopTimer();
+                ringAlarm();
                 return;
             }
             if (seconds == 00) {

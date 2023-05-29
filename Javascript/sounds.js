@@ -28,3 +28,17 @@ function changeVolume() {
     console.log("Changing volume to " + Howler.volume);
 }
 
+function ringAlarm() {
+    Howler.stop();
+    var sound = new Howl({
+        src: [musicPath('Alarm')],
+        onend: function () {
+            console.log("alarm stopped");
+        }
+    })
+    sound.play();
+    setTimeout(function () {
+        sound.stop();
+        autoplay(0, audioFiles);
+    }, 6000);
+}
