@@ -8,13 +8,12 @@ body {
 }
 
 #background {
-    /* Full height */
-    /* height: 100%; */
-
-    /* Center and scale the image nicely */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin: 0em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 .mainContent {
@@ -150,5 +149,20 @@ p {
 
     #timerText {
         font-size: 150px;
+    }
+
+    /* Adding new Background properties to fit mobile */
+    html {
+        background: url('image.png') no-repeat center fixed;
+        background-size: cover;
+    }
+
+    /* Resetting old background properties to fit mobile */
+    #background {
+        position: initial;
+        top: 00%;
+        left: 00%;
+        transform: translate(-50%, 0%);
+        width: auto;
     }
 }
