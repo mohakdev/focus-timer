@@ -117,6 +117,7 @@ p {
 #settingsButton {
     position: absolute;
     left: 99%;
+    top: 0%;
     max-height: 35px;
     max-width: fit-content;
     transform: translate(-100%, 30%);
@@ -149,10 +150,5 @@ p {
 
     #timerText {
         font-size: 150px;
-    }
-
-    #settingsButton {
-        max-height: 60px;
-        max-width: fit-content;
     }
 }

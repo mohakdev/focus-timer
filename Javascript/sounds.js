@@ -1,6 +1,11 @@
-var audioFiles = [musicURL('ZdAWWeUB4vg6jiRrbeAkurjZsVVQOULU'),
+var audioFiles = [musicURL('g8i4mPZDPoFdt9XpF3ExysJlgOUbPF2W'),
+musicURL('ZdAWWeUB4vg6jiRrbeAkurjZsVVQOULU'),
 musicURL('gDbFwaoX3CP6muZB5LMV0yOGIRFS6h93'),
-musicURL('tle9hsTc8fBS1Sip2yfMWJHaxni7Nsi9')];
+musicURL('tle9hsTc8fBS1Sip2yfMWJHaxni7Nsi9'),
+musicURL('pftuN6fy7XKIYsVswVnxUrmdzQxe6Lre'),
+musicURL('H62x1P19oZHlpdkdUfPB2TrF8AH8oSEr'),
+musicURL('kH1ekepotpGLgw0ocuMAucK2SBkpaqAB'),
+musicURL('niptpFc6N8em4u5577BRrUOgdFYzEbmc'),];
 
 autoplay(0, audioFiles);
 
