@@ -1,6 +1,6 @@
 # Focus Timer
 The elegant way to improve your attention span and focus time.
-![websitePhoto](https://i.imgur.com/kOcD5Iq.jpeg)
+![websitePhoto](https://i.imgur.com/eaLXIoo.jpeg)
 
 ## Features
 This website is based on the pomodoro Technique which states that Work for 50 minutes and then take a 10 minute break. Repeat this 4 times.
